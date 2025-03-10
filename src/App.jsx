@@ -9,6 +9,7 @@ const App = () => {
   const [users, setUsers] = useState(() => {
     const savedUsers = localStorage.getItem('users');
     return savedUsers ? JSON.parse(savedUsers) : initialUsers;
+    
   });
 
   useEffect(() => {
